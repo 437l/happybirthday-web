@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday To Mia..</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg-gradient: linear-gradient(135deg, #000000 0%, #0b0b0b 40%, #1a0000 100%);
+  --primary-gold: #ef4444;
+  --secondary-gold: #b91c1c;
+  --text-main: #f9fafb;
+  --text-muted: #9ca3af;
+  --panel-bg: rgba(255, 255, 255, 0.05);
+  --panel-border: rgba(239, 68, 68, 0.15);
+  --btn-bg: #dc2626;
+  --btn-hover: #b91c1c;
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: var(--bg-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-main);
+  overflow: hidden;
+  font-family: 'Poppins', 'Cairo', sans-serif;
+  perspective: 1000px;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0f172a;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.8s var(--ease-in-out);
+  z-index: 999;
+}
+
+#overlay.active {
+  opacity: 1;
+}
+
+#starCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 550px;
+  text-align: center;
+  z-index: 10;
+  position: relative;
+}
+
+.btn {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 700;
+  padding: 16px 36px;
+  border-radius: 50px;
+  border: none;
+  background: var(--btn-bg);
+  color: #0f172a;
+  cursor: pointer;
+  transition: all 0.4s var(--ease-in-out);
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:hover {
+  background: var(--btn-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(239, 68, 68, 0.5);
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: rotate(45deg);
+  transition: all 0.6s var(--ease-in-out);
+  opacity: 0;
+}
+
+.btn:hover::after {
+  left: 120%;
+  opacity: 1;
+}
+
+#count {
+  font-size: 120px;
+  font-weight: 700;
+  color: var(--primary-gold);
+  text-shadow: 0 0 20px rgba(239, 68, 68, 0.6);
+  opacity: 0;
+  display: none;
+  transform: scale(0.5);
+  transition: all 0.5s var(--ease-in-out);
+}
+
+#count.show {
+  display: block;
+  opacity: 1;
+  transform: scale(1);
+}
+
+#count.hide {
+  opacity: 0;
+  transform: scale(1.5);
+}
+
+#text {
+  font-size: 28px;
+  margin-top: 20px;
+  min-height: 50px;
+  font-weight: 500;
+  color: var(--text-main);
+  opacity: 0;
+  display: none;
+  transition: opacity 0.5s var(--ease-in-out);
+}
+
+#text.show {
+  display: block;
+  opacity: 1;
+}
+
+.cursor {
+  display: inline-block;
+  width: 3px;
+  height: 28px;
+  background: var(--primary-gold);
+  margin-left: 5px;
+  animation: blink 1s infinite;
+  vertical-align: middle;
+}
+
+@keyframes blink { 50% { opacity: 0; } }
+
+.message {
+  margin-top: 30px;
+  padding: 30px;
+  border-radius: 20px;
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  cursor: pointer;
+  transition: all 0.4s var(--ease-in-out);
+  font-family: 'Cairo', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--text-main);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  display: none;
+  transform: translateY(20px);
+}
+
+.message.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#gallery {
+  opacity: 0;
+  display: none;
+  transform: rotateX(-10deg);
+  transition: all 0.8s var(--ease-in-out);
+}
+
+#gallery.show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 1;
+  transform: rotateX(0deg);
+}
+
+.image-container {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 20px auto;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+  border: 4px solid var(--panel-border);
+  position: relative;
+}
+
+#image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+#image.fade-out {
+  opacity: 0;
+  transform: scale(1.05) translateX(-20px);
+}
+
+#cardText {
+  margin-top: 20px;
+  padding: 15px 20px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 15px;
+  border: 1px solid var(--panel-border);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+#name {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary-gold);
+  margin-bottom: 5px;
+}
+
+#desc {
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+#endPage {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at center, #111 0%, #000 100%);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  text-align: center;
+  z-index: 999;
+}
+
+#endPage.active {
+  display: flex;
+}
+
+#endImage {
+  width: 260px;
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(255,0,0,0.2);
+  animation: pop 0.6s ease;
+}
+
+@keyframes pop {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.view { display: none; }
+.view.active { display: flex; flex-direction: column; align-items: center; }
+.fade-out-element { opacity: 0 !important; transform: translateY(-20px) !important; transition: all 0.5s var(--ease-in-out) !important; }
+
+</style>
+</head>
+<body>
+
+<canvas id="starCanvas"></canvas>
+<div id="overlay"></div>
+
+<audio id="bgMusic" loop>
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+  <div id="startView" class="view active">
+    <button class="btn" onclick="startSequence()">Start</button>
+  </div>
+
+  <div id="count"></div>
+  <div id="text"></div>
+  <div id="messageBox" class="message" onclick="openGallery()">Open the messages</div>
+
+  <div id="gallery">
+    <div class="image-container"><img id="image"></div>
+    <div id="cardText">
+      <div id="name"></div>
+      <div id="desc"></div>
+    </div>
+    <br>
+    <button class="btn" onclick="nextImage()">next ➔</button>
+  </div>
+</div>
+
+<div id="endPage">
+  <img id="endImage" style="width: 260px; border-radius: 16px;">
+  <div id="endText" style="color: white; margin-top: 20px;"></div>
+</div>
+
+<script src="galleryData.js"></script>
+
+<script>
+
+  const canvas = document.getElementById('starCanvas');
+const ctx = canvas.getContext('2d');
+let stars = [];
+
+function initStars() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  stars = [];
+  for (let i = 0; i < 150; i++) {
+    stars.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      size: Math.random() * 2,
+      opacity: Math.random(),
+      speed: Math.random() * 0.5 + 0.1
+    });
+  }
+}
+
+function drawStars() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = '#ef4444'; 
+  stars.forEach(s => {
+    ctx.globalAlpha = s.opacity;
+    ctx.beginPath();
+    ctx.arc(s.x, s.y, s.size, 0, Math.PI * 2);
+    ctx.fill();
+    s.y -= s.speed;
+    if (s.y < 0) s.y = canvas.height;
+    s.opacity += (Math.random() - 0.5) * 0.05;
+    if (s.opacity < 0.1) s.opacity = 0.1;
+    if (s.opacity > 1) s.opacity = 1;
+  });
+  requestAnimationFrame(drawStars);
+}
+
+window.addEventListener('resize', initStars);
+initStars();
+drawStars();
+
+const music = document.getElementById("bgMusic");
+let currentIndex = 0;
+
+function startSequence() {
+  music.play().catch(() => {});
+  const startDiv = document.getElementById("startView");
+  startDiv.classList.add("fade-out-element");
+  setTimeout(() => {
+    startDiv.classList.remove("active");
+    startDiv.style.display = "none";
+    startCount();
+  }, 500);
+}
+
+function startCount() {
+  let i = 1;
+  const el = document.getElementById("count");
+  el.style.display = "block";
+  setTimeout(() => el.classList.add("show"), 50);
+
+  const interval = setInterval(() => {
+    el.textContent = i;
+    el.classList.remove("show");
+    
+    setTimeout(() => {
+      if (i <= 3) el.classList.add("show");
+    }, 50);
+
+    i++;
+    if (i > 3) {
+      clearInterval(interval);
+      el.classList.add("hide");
+      setTimeout(() => {
+        el.style.display = "none";
+        typeText();
+      }, 500);
+    }
+  }, 900);
+}
+
+function typeText() {
+  const el = document.getElementById("text");
+  const text = galleryData.welcomeText;
+
+  el.textContent = "";
+  el.style.display = "block";
+  setTimeout(() => el.classList.add("show"), 50);
+
+  let i = 0;
+  const cursor = document.createElement("span");
+  cursor.className = "cursor";
+  el.appendChild(cursor);
+
+  const interval = setInterval(() => {
+    if (i < text.length) {
+      el.insertBefore(document.createTextNode(text[i]), cursor);
+      i++;
+    } else {
+      clearInterval(interval);
+      const msgBox = document.getElementById("messageBox");
+      msgBox.style.display = "block";
+      setTimeout(() => msgBox.classList.add("show"), 50);
+    }
+  }, 80);
+}
+
+function openGallery() {
+  const overlay = document.getElementById("overlay");
+  overlay.classList.add("active");
+
+  setTimeout(() => {
+    document.getElementById("text").style.display = "none";
+    document.getElementById("messageBox").style.display = "none";
+    
+    const gallery = document.getElementById("gallery");
+    gallery.style.display = "flex";
+    updateCard();
+
+    setTimeout(() => {
+      gallery.classList.add("show");
+      overlay.classList.remove("active");
+    }, 50);
+  }, 800);
+}
+
+function updateCard() {
+  const person = galleryData.people[currentIndex];
+  const img = document.getElementById("image");
+  const nameEl = document.getElementById("name");
+  const descEl = document.getElementById("desc");
+
+  img.classList.add("fade-out");
+
+  setTimeout(() => {
+    img.src = person.image;
+    nameEl.textContent = person.name;
+    descEl.textContent = person.caption;
+    img.classList.remove("fade-out");
+  }, 400);
+}
+
+function nextImage() {
+  if (currentIndex < galleryData.people.length - 1) {
+    currentIndex++;
+    updateCard();
+  } else {
+    showEndMessage();
+  }
+}
+
+function showEndMessage() {
+  document.getElementById("gallery").style.display = "none";
+  const endPage = document.getElementById("endPage");
+  endPage.classList.add("active");
+
+  const img = document.getElementById("endImage");
+  const text = document.getElementById("endText");
+
+  img.src = galleryData.endImage;
+  text.textContent = "";
+
+  let i = 0;
+  const msg = galleryData.endMessage;
+  const interval = setInterval(() => {
+    text.textContent += msg[i];
+    i++;
+    if (i >= msg.length) clearInterval(interval);
+  }, 60);
+}
+</script>
+
+</body>
+</html>
