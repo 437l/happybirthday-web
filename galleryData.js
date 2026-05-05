@@ -1,4 +1,4 @@
-const galleryData = {
+ const galleryData = {
 
     welcomeText: "Happy birthday Mia ur special day is the day we’ve been waiting for mylove 5/9 is the day you become 19 and we were all excited for it",
 
@@ -178,6 +178,6 @@ Happy birthday bb 💋`
 
     endMessage: `the end message hfffff `,
 
-    endImage: "https://cdn.discordapp.com/attachments/1500807973042257941/1500848219398340729/IMG_4969.jpg?ex=69f9ed53&is=69f89bd3&hm=06b562a208a246d690dfd818f942896ec8d786c0f51c6ab9e12e877680cd7c74&"
+    endImage: "https://cdn.discordapp.com/attachments/1500863897106911262/1500913190958272655/IMG_4981.jpg?ex=69fb7b56&is=69fa29d6&hm=96a4d60201fa483872ab12ad779a45c07821034be69e0f95e10b65e1d6d214e2&"
 
 };
