@@ -1,6 +1,6 @@
 const galleryData = {
 
-    welcomeText: "Happy birthday, Mia!",
+    welcomeText: "Happy birthday Mia ur special day is the day we’ve been waiting for mylove 5/9 is the day you become 19 and we were all excited for it",
 
     people: [
         {
