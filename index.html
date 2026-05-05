@@ -11,7 +11,7 @@
 
 <style>
 :root {
-  --bg-gradient: linear-gradient(135deg, #ffffff 0%, #fff0f5 50%, #ffacbf 100%);
+  --bg-gradient: radial-gradient(circle, #fff0f5 0%, #ffffff 70%);
 
   --primary-gold: #ffacbf;
   --secondary-gold: #ff8fb1;
@@ -19,7 +19,7 @@
   --text-main: #ffffff;
   --text-muted: #6b6b6b;
 
-  --panel-bg: rgba(255, 172, 191, 0.08);
+  --panel-bg: rgba(255, 255, 255, 0.6);
   --panel-border: rgba(255, 172, 191, 0.25);
 
   --btn-bg: #ffacbf;
@@ -35,7 +35,7 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   background: var(--bg-gradient);
   display: flex;
   align-items: center;
