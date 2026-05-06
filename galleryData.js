@@ -13,7 +13,7 @@
 {
     "name": "Naya",
     "image": "https://i.imgur.com/nDdMsyO.jpeg",
-    "caption": `Happy birthday to my beautiful girl, 
+    "caption": `Happy birthday to my beautiful girl,    
     I honestly can’t imagine my days without you, 
     I hope this year brings you everything your heart wishes for, 
     because you truly deserve the world and more. 
