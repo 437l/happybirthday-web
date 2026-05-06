@@ -1,6 +1,6 @@
  const galleryData = {
 
-    welcomeText: "Happy birthday Mia ur special day is the day we’ve been waiting for mylove 5/9 is the day you become 19 and we were all excited for it",
+    welcomeText: "We'ar all waiting for 5/9.",
 
     people: [
         {
@@ -195,8 +195,8 @@ Happy birthday bb 💋`
   
     ],
 
-    endMessage: `the end message hfffff `,
+    endMessage: `وفي نهاية هاذا  اليوم (5/9/2026) كلنا بنهنيك وبندعيلك بكل قلوب صافية لانك شخص اقل ما يقال عليه ملاك من جوا ومن برا وبنتمى تضلي هيك على طول وما تتغيري لانك انتي نفسك وماحد بيستحق يكون زيك، اليوم انتي 19 سنة والايام بتمشي وهتكبري وهتعرفي قديش الناس الي بحياتك بحبوك وبيوقفو معاك على صح ولغلط والمشاكل والفرح وحتضلي شخص لطيف بعين الكل وانا بتحديد بحسك لسا 13 سنة قد ولادي لانك ما بتاذي حد وما بتجرحي حد حتى وانتي مو غلطانة بتدوري ع طريقة ما تجرحي فيها حد بس لانك مش زي الباقي، هاذا الكلام طالع من قلب كل حد شارك بهاذا الانجاز العظيم الا بانا من اول ما دخلت بس اختارت الالوان والاغنية ورفعت ضغطي ووهبت كلام الكل وتعب الكل الها بنصحك تبلكيها وتشوفيلك صاحبه غيرها`,
 
-    endImage: "https://cdn.discordapp.com/attachments/1500863897106911262/1500913190958272655/IMG_4981.jpg?ex=69fb7b56&is=69fa29d6&hm=96a4d60201fa483872ab12ad779a45c07821034be69e0f95e10b65e1d6d214e2&"
+    endImage: "https://i.imgur.com/r9n0CP2.jpeg"
 
 };
