@@ -46,6 +46,32 @@ body {
   perspective: 1000px;
 }
 
+
+
+/*  delete it */
+body.engineer-mode {
+  background-color: #f0f4f8;
+  background-image: 
+    linear-gradient(rgba(255, 172, 191, 0.2) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 172, 191, 0.2) 1px, transparent 1px) !important;
+  background-size: 30px 30px !important;
+}
+
+
+.engineer-icon {
+  display: inline-block; 
+  animation: spin 4s linear infinite; 
+  margin-left: 10px;
+}
+
+@keyframes spin { 
+  from { transform: rotate(0deg); } 
+  to { transform: rotate(360deg); } 
+}
+
+
+
+
 #overlay {
   position: fixed;
   top: 0;
@@ -304,7 +330,7 @@ body {
 <div id="overlay"></div>
 
 <audio id="bgMusic" loop>
-  <source src="https://mp3tourl.com/audio/1777898463226-9fbb5cb6-0626-4da4-ab2a-e49d540abe7d.wav" type="audio/mpeg"> // your url music here
+  <source src="https://mp3tourl.com/audio/1777898463226-9fbb5cb6-0626-4da4-ab2a-e49d540abe7d.wav" type="audio/mpeg">
 </audio>
 
 <div class="container">
@@ -471,6 +497,15 @@ function updateCard() {
 
   setTimeout(() => {
     img.src = person.image;
+  const body = document.body;
+
+    if (person.job === "engineer") {
+      body.classList.add("engineer-mode");  
+      nameEl.innerHTML = `<span class="engineer-icon">⚙️</span>` + person.name;
+     } else {
+      body.classList.remove("engineer-mode");  
+      nameEl.textContent = person.name;
+    }
     nameEl.textContent = person.name;
     descEl.textContent = person.caption;
     img.classList.remove("fade-out");
