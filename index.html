@@ -234,22 +234,26 @@ body.engineer-mode {
   border-radius: 50%;
   overflow: hidden;
   margin: 20px auto;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
   border: 4px solid var(--panel-border);
   position: relative;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 #image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1); 
+  opacity: 1;
+  transform: scale(1);
 }
 
 #image.fade-out {
   opacity: 0;
-  transform: scale(1.05) translateX(-20px);
+  transform: scale(0.9) translateY(10px); 
 }
+
 
 #cardText {
   margin-top: 20px;
@@ -259,6 +263,12 @@ body.engineer-mode {
   border: 1px solid var(--panel-border);
   backdrop-filter: blur(8px);
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  transition: all 0.5s ease;
+}
+
+#cardText.fade-out {
+  opacity: 0;
+  transform: translateY(5px);
 }
 
 #name {
@@ -485,24 +495,40 @@ function updateCard() {
   const img = document.getElementById("image");
   const nameEl = document.getElementById("name");
   const descEl = document.getElementById("desc");
+  const cardText = document.getElementById("cardText");
 
   img.classList.add("fade-out");
+  cardText.style.opacity = "0";
+  cardText.style.transform = "translateY(10px)";
 
   setTimeout(() => {
     img.src = person.image;
-  const body = document.body;
-
+    
+    const body = document.body;
     if (person.job === "engineer") {
       body.classList.add("engineer-mode"); 
-     } else {
+    } else {
       body.classList.remove("engineer-mode");  
-      nameEl.textContent = person.name;
     }
+    
     nameEl.textContent = person.name;
     descEl.textContent = person.caption;
-    img.classList.remove("fade-out");
+
+    img.onload = () => {
+      img.classList.remove("fade-out");
+      cardText.style.opacity = "1";
+      cardText.style.transform = "translateY(0)";
+    };
+    
+    setTimeout(() => {
+      img.classList.remove("fade-out");
+      cardText.style.opacity = "1";
+      cardText.style.transform = "translateY(0)";
+    }, 300);
+
   }, 400);
 }
+
 
 function nextImage() {
   if (currentIndex < galleryData.people.length - 1) {
