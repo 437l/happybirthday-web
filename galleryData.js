@@ -4,7 +4,7 @@
 
     people: [
         {
-    "name": "KaiTel",
+    "name": "KaiTel (engineer)",
     "image": "https://i.imgur.com/bu9V0XG.jpeg",
     "caption": "كل عام وانتي بخير، وهبي بيرذ ديي يا جوردان اندبندنت وومن، ان شاء الله ايامك الجاي تكون احلى وتحققي كل احلامك وتصيري دكتورة سنان قد دنيا ونبلط البحر ع حسابك، وتضلك تضحكي وتفرحي وتعيشي كل لحظاتك الحلوه، وما تشوفي زعل ولا تعب عليكي وترتقي لاعلى المراتب، ويخليك لاحبابك واصحابك ويحفظلك كل الناس الي بتحبيهم، 19 سنة عدو ولسا في كتير لقدام واشياء احلا من الي عديتي فيها وانا بعتذر على ال 4 سنين الي عشتهم معاك علشانك لو رحتي ودرستي اشي او اخدتي كورس كان احسن وجبتي مصاري بس انتي غبيه وحتضلي غبيه وحتضلي الـ بطريق تبعي حتى لو صار طولك 150 ونص وشبرين، ولما تتخرجي اتذكري تبعتيلي علشان ابارك لك واذكرك اني (مهندس) يا شويه دكتورة ",
     "job": "engineer"
@@ -13,7 +13,11 @@
 {
     "name": "Naya",
     "image": "https://i.imgur.com/nDdMsyO.jpeg",
-    "caption": "Happy birthday to my beautiful girl, I honestly can’t imagine my days without you, I hope this year brings you everything your heart wishes for, because you truly deserve the world and more. Stay the amazing, kind, and strong girl you are. "
+    "caption": `Happy birthday to my beautiful girl, 
+    I honestly can’t imagine my days without you, 
+    I hope this year brings you everything your heart wishes for, 
+    because you truly deserve the world and more. 
+    Stay the amazing, kind, and strong girl. `
   },
 
 {
