@@ -160,6 +160,7 @@ body.engineer-mode {
   margin-top: 20px;
   min-height: 50px;
   font-weight: 500;
+  direction: rtl;
 
   color: var(--text-main);
 
@@ -448,20 +449,17 @@ function startCount() {
 
 function typeText() {
   const el = document.getElementById("text");
-  const text = galleryData.welcomeText;
+  const fullText = galleryData.welcomeText;
 
   el.textContent = "";
   el.style.display = "block";
-  setTimeout(() => el.classList.add("show"), 50);
+  el.classList.add("show");
 
   let i = 0;
-  const cursor = document.createElement("span");
-  cursor.className = "cursor";
-  el.appendChild(cursor);
-
+  
   const interval = setInterval(() => {
-    if (i < text.length) {
-      el.insertBefore(document.createTextNode(text[i]), cursor);
+    if (i <= fullText.length) {
+      el.textContent = fullText.substring(0, i);
       i++;
     } else {
       clearInterval(interval);
@@ -469,7 +467,7 @@ function typeText() {
       msgBox.style.display = "block";
       setTimeout(() => msgBox.classList.add("show"), 50);
     }
-  }, 80);
+  }, 60);
 }
 
 function openGallery() {
