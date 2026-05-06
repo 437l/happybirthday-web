@@ -57,21 +57,6 @@ body.engineer-mode {
   background-size: 30px 30px !important;
 }
 
-
-.engineer-icon {
-  display: inline-block; 
-  animation: spin 4s linear infinite; 
-  margin-left: 10px;
-}
-
-@keyframes spin { 
-  from { transform: rotate(0deg); } 
-  to { transform: rotate(360deg); } 
-}
-
-
-
-
 #overlay {
   position: fixed;
   top: 0;
@@ -508,8 +493,7 @@ function updateCard() {
   const body = document.body;
 
     if (person.job === "engineer") {
-      body.classList.add("engineer-mode");  
-      nameEl.innerHTML = `<span class="engineer-icon">⚙️</span>` + person.name;
+      body.classList.add("engineer-mode"); 
      } else {
       body.classList.remove("engineer-mode");  
       nameEl.textContent = person.name;
