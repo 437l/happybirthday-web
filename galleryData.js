@@ -5,32 +5,32 @@
     people: [
         {
     "name": "KaiTel",
-    "image": "https://cdn.discordapp.com/attachments/1471172542097264874/1501479647802687548/IMG_4707.jpg?ex=69fc3964&is=69fae7e4&hm=72604ab7b432045457d44c5c7e7931dda9990a4510e56d3d8b3cb1a00b996fc9&",
-    "caption": "كل عام وانتي بخير، وهبي بيرذ ديي يا جوردان اندبندنت وومن، ان شاء الله ايامك الجاي تكون احلى وتحققي كل احلامك وتصيري دكتورة سنان قد دنيا ونبلط البحر ع حسابك، وتضلك تضحكي وتفرحي وتعيشي كل لحظاتك الحلوه، وما تشوفي زعل ولا تعب عليكي وترتقي لاعلى المراتب، ويخليك لاحبابك واصحابك ويحفظلك كل الناس الي بتحبيهم، 19 سنة عدو ولسا في كتير لقدام واشياء احلا من الي عديتي فيها وانا بعتذر على ال 4 سنين الي عشتهم معاك علشانك لو رحتي ودرستي اشي او اخدتي كورس كان احسن وجبتي مصاري بس انتي غبيه وحتضلي غبيه وحتضلي الـ بطريق تبعي حتى لو صار طولك 150 ونص وشبرين، ولما تتخرجي اتذكري تبعتيلي علشان ابارك لك واذكرك اني (مهندس) يا شويه دكتورة سنان",
+    "image": "https://i.imgur.com/bu9V0XG.jpeg",
+    "caption": "كل عام وانتي بخير، وهبي بيرذ ديي يا جوردان اندبندنت وومن، ان شاء الله ايامك الجاي تكون احلى وتحققي كل احلامك وتصيري دكتورة سنان قد دنيا ونبلط البحر ع حسابك، وتضلك تضحكي وتفرحي وتعيشي كل لحظاتك الحلوه، وما تشوفي زعل ولا تعب عليكي وترتقي لاعلى المراتب، ويخليك لاحبابك واصحابك ويحفظلك كل الناس الي بتحبيهم، 19 سنة عدو ولسا في كتير لقدام واشياء احلا من الي عديتي فيها وانا بعتذر على ال 4 سنين الي عشتهم معاك علشانك لو رحتي ودرستي اشي او اخدتي كورس كان احسن وجبتي مصاري بس انتي غبيه وحتضلي غبيه وحتضلي الـ بطريق تبعي حتى لو صار طولك 150 ونص وشبرين، ولما تتخرجي اتذكري تبعتيلي علشان ابارك لك واذكرك اني (مهندس) يا شويه دكتورة ",
     "job": "engineer"
       },
 
 {
     "name": "Naya",
-    "image": "https://cdn.discordapp.com/attachments/1500863897106911262/1501257628074901564/IMG_5026.jpg?ex=69fb6a9e&is=69fa191e&hm=811d129fe704fc3039f4dc8ea39de5bd60834323f20529d5dca6cc3b4cfb8e30&",
+    "image": "https://i.imgur.com/nDdMsyO.jpeg",
     "caption": "Happy birthday to my beautiful girl, I honestly can’t imagine my days without you, I hope this year brings you everything your heart wishes for, because you truly deserve the world and more. Stay the amazing, kind, and strong girl you are. "
   },
 
 {
-    "name": "",
-    "image": "",
-    "caption": ""
+    "name": "bana",
+    "image": "https://i.imgur.com/Qi9CdX2.jpeg",
+    "caption": "هاي جايز انا نايمه مش فاضيه احط معايده لصاحبتي مخليتها لاخر يوم بلكرة الارضية"
   },
 
 {
     "name": "rmo",
-    "image": "https://cdn.discordapp.com/attachments/1499784095805210654/1499789121705738351/IMG_5233.jpg?ex=69fb58f7&is=69fa0777&hm=48c3afa16f2c8689fc389d21c6178a9b04617820dc6cff1cdc7e3f9a461b84c4&",
+    "image": "https://i.imgur.com/x6tSi5G.jpeg",
     "caption": " المهم كل عام وانتي بخير ياميا يابعد روحي أنا عقبال الألف سنه يارببب❣️."
   },
 
 {
     "name": "𝑴𝒂𝒍𝒂𝒌 ʚଓ",
-    "image": "https://cdn.discordapp.com/attachments/1499784095805210654/1499789507812393123/566569f8426fb4f6cf56c0ea58fbabf5_edit_1019020920766845.jpg?ex=69fb5953&is=69fa07d3&hm=4510bffffb33cd259f3c8bbb2afcc2c778c3b229e3342dccb7d0cdd34737b850&",
+    "image": "https://i.imgur.com/TAGE14S.jpeg",
     "caption": `ميوشتيي حبيبة قلبي كل عام وانتِ بالف الف خيير احلى مين يكبر سنة🥹🥹🤍🤍
 يارب تكون سنة حلوة عليكي و تحققي كلشي ببالك و اشوفك باعلى المراتب يروحي انتِ بحبكككك🥹🫂🫂. 
 Enjoy your dayy🫂.`
@@ -111,7 +111,7 @@ Happy birthday bb 💋`
 
 {
     "name": "ᏦᎻᎯᏞᎬᎠ",
-    "image": "https://cdn.discordapp.com/avatars/713537715110543390/abac3e24d71e9e876a71552ab8d10eb7.png?size=240",
+    "image": "https://i.imgur.com/wJP0uzs.png",
     "caption": "كل عام وانتِ بخير ميا عقبال ال100 سنة يارب و انشاءالله ايامك كلها فرح ونشوفك بأعلى المراتب."
   },
 
@@ -123,13 +123,13 @@ Happy birthday bb 💋`
 
 {
     "name": "Sun",
-    "image": "https://cdn.discordapp.com/avatars/972742891535491093/5a4b6b9a83e52970fd53ce376ceab15d.png?size=240",
+    "image": "https://i.imgur.com/SRZfGOC.png",
     "caption": "كل عام وانتي بخيرر "
   },
 
 {
     "name": "ـونـكه𓂆فيـ 𐙚",
-    "image": "https://cdn.discordapp.com/attachments/1499784095805210654/1499889603069612083/download_-_2026-05-01T185647.615.jfif?ex=69fb0dcb&is=69f9bc4b&hm=3e22b7e6b2f11c5721874c3bf414bf0c239f2cf9d6dcf02c155bc78f03f3cceb&",
+    "image": "https://i.imgur.com/cvWMaxp.jpeg",
     "caption": "كل عام وانتي بخير يحلوة "
   },
 
@@ -137,7 +137,7 @@ Happy birthday bb 💋`
     "name": "𝐥𝐚𝐯𝐢",
     "caption": `كل عام ونتي بخير يروحي سنين السعاده ترافق دربك يالبي عقبال مليار سنه تحققي كلشي في بالك سنه حلوه وخير عليكي 🫶🏻🫶🏻
 من : غنى`,
-    "image": "https://cdn.discordapp.com/attachments/1499784095805210654/1499894131705643158/IMG_3456.jpg?ex=69fb1203&is=69f9c083&hm=030da4e942444352d62090097f45dcc1bccd6d72488dfa15d8c9b61685dc0ee6&"
+    "image": "https://i.imgur.com/qGymGV0.jpeg"
   },
 
 {
@@ -154,42 +154,42 @@ Happy birthday bb 💋`
 
 {
     "name": "Yazan",
-    "image": "https://cdn.discordapp.com/attachments/1499784095805210654/1500076558415695884/image.png?ex=69fb1329&is=69f9c1a9&hm=2a6a72f04f920139f34c880ff42cc23935dec01d441f035b9a3e392ccf385853&",
+    "image": "https://i.imgur.com/m7Kw5pp.png",
     "caption": "كل عامم وانتيي بالفف خيرر مياا و عقبال المليوننن و انبسطي بيومك"
   },
 
 {
     "name": "𝐋𝐚𝐫𝐚",
-    "image": "https://cdn.discordapp.com/attachments/1499784095805210654/1500110470470832248/4345ad2462f2389aaf69d884ab828034.jpg?ex=69fb32be&is=69f9e13e&hm=2123775bea330b995afbf14d1ca9e619efc32f22d96c7f4bbe07e2fb527b76b4&",
+    "image": "https://i.imgur.com/SkYtfe2.jpeg",
     "caption": "ميا صديقتي ورفيقتي احب ان اهنئك بميلادك يكوين اوف مايو كل عام ونتي بالف خير وعقبال 103967777748484747473938799 سنة يارب وشوفك باعلى المراتب"
   },
 
 {
     "name": "𝙎𝙤𝙯",
-    "image": "https://cdn.discordapp.com/attachments/1499784095805210654/1500115108423143444/IMG_2734.jpg?ex=69fb3710&is=69f9e590&hm=005d68a1a1c64635856943a3a72a0792c4e59bfe483e3edd9b58dd71293b6df9&",
+    "image": "https://i.imgur.com/V6sP398.jpeg",
     "caption": "حبيبة قلبييي كل عاام وانتي بألف خيييير ميوووشتي 💜💜"
   },
 
 {
     "name": "𝒓𝒂𝒘𝒂𝒏",
-    "image": "https://cdn.discordapp.com/attachments/1499784095805210654/1500247164935340217/IMG_2732.jpg?ex=69fb094d&is=69f9b7cd&hm=8ae1d0e9eda1e8316266bd176bfc731ac768e41509c1fd50a7c9f2af37536fc8&",
+    "image": "https://i.imgur.com/H9A1hMf.jpeg",
     "caption": "كل عام وانتي بالف خير يعيونننننييييي احلا مين  عرفتو ريتك تقبريني مزكاكي وانشاءالله تحققي  كلشي بدك ياه بهيدي سنه وكل شي تتمنيه ونيال الي بدو ياخدك  وبحبك"
   },
   {
     "name": "𝐃𝐋3",
-    "image": "https://cdn.discordapp.com/attachments/1499784095805210654/1501361420716081283/2026-05-04_081454.png?ex=69fbcb48&is=69fa79c8&hm=3c4d047596dc4caf474e1617f82531abd3bc1e20afab53ae9a8f10b70126d6e5&",
+    "image": "https://i.imgur.com/WHw9NsY.png",
     "caption": `كل عام وانتي بالف خير يروحيي وتكون سنه حلوه وبتجنن عليكي يعمري اييكي فارسين سيفقيليمم بحبك وبعرف انك الي💋 🫦 `
   },
 
 {
     "name": "𝑫𝒂𝒍𝒆𝒆𝒏",
-    "image": "https://cdn.discordapp.com/attachments/1499784095805210654/1501366029215858849/0.webp?ex=69fbcf93&is=69fa7e13&hm=57f0c83cb1db4021f8192e44136d17a732f73f588ce23f0c4a7c5598f0f386d6&",
+    "image": "https://i.imgur.com/4SrVpxH.png",
     "caption": `ميوشش حبيبي العمر كله يروحي وعقبال ال12837463648سنه 💋 💋 وانتي احلى واجمل بنوته ان شاء الله تكون سنه حلوة عليكي يقلبي وتحققي اهدافك واحلامك بهل سنه وتكوني من اسعد الناس بحياتهم بحبك Happy birthday baby 🥹 💋 `
   },
 
 {
     "name": "ria",
-    "image": "https://cdn.discordapp.com/attachments/1499784095805210654/1501383893801238619/2c1c64bf388895ea001b6619073f1adf.jpg?ex=69fbe036&is=69fa8eb6&hm=0cfb83cca9ca32a8c9597fd813d340901bb5ea8d37a8c7643a23a89f5ba5a242&",
+    "image": "https://i.imgur.com/eNfbI3n.jpeg",
     "caption": `يحلوة الحلوات كل عام و انتي بخييير ان شاء الله سنة فرح و نجاح و تحققي كل لي تتمني يئلبي ميوشتي `
   }
   
