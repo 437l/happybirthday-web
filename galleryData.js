@@ -1,7 +1,7 @@
  const galleryData = {
 
-    welcomeText: `Eight to nine Happyyyyyyyyyy birthday, Mia (5/9/2026)
-    
+    welcomeText: `
+    Eight to nine Happy birthday, Mia (5/9/2026)
     احلا من يكبر سنة واغلى شخص على قلوبنا وكبر جحشنا وصار حمار، ما بدنا نحملك جميلة بس هاذا الكلام الي كاتبينو طالع من صماصيم قلوبنا لانك شخص بستاهل اكثر من هيك صراحة ونتمنى اِنا عملنا اكثر من هيك بس الواقع والظروف مش زابطين وبس هيك اكبسي (Go to the messages) وانجوي.`,
 
     people: [
