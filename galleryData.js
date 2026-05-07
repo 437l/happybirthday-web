@@ -12,7 +12,7 @@
       },
 
 {
-    "name": "Naya",
+    "name": "Naya 🎀",
     "image": "https://i.imgur.com/nDdMsyO.jpeg",
     "caption": `Happy birthday to my beautiful girl,    
     I honestly can’t imagine my days without you, 
