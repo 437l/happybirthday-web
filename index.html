@@ -512,6 +512,13 @@ function updateCard() {
     }
     
     nameEl.textContent = person.name;
+
+    if (person.job === "engineer") {
+      nameEl.style.color = "#7c3aed"; 
+    } else {
+      nameEl.style.color = "";
+    }
+    
     descEl.textContent = person.caption;
 
     img.onload = () => {
